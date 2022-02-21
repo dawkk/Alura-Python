@@ -9,11 +9,14 @@ numero_secreto = 43
 total_tentativas = 5
 rodada = 1
 
-while(rodada <= total_tentativas):
+# poderiamos usar o while invés do for desta maneira, estamos substituindo abaixo por for while(rodada <= total_tentativas):
+
+for rodada in range(1, total_tentativas + 1):
     print("Tentativa {} de {}".format(rodada, total_tentativas))
     chute_str = input("Digite seu numero: ")
-    # print("Você digitou ", chute_str)
+    print("Você digitou ", chute_str)
     chute = int(chute_str)
+
     acertou = numero_secreto == chute
     chute_maior = numero_secreto > chute
     chute_menor = numero_secreto < chute
