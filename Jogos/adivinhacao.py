@@ -7,8 +7,20 @@ print("Bem vindo ao jogo de Adivinhação!")
 print("***********************************")
 
 numero_secreto = random.randrange(1, 101)
-total_tentativas = 5
+total_tentativas = 0
 rodada = 1
+
+print("Qual nível de dificuldade?")
+print("(1) Fácil (2) Médio (3) Difícil")
+
+nivel = int(input("Defina o nível: "))
+
+if(nivel == 1):
+    total_tentativas:20
+if(nivel == 2):
+    total_tentativas:10
+if(nivel == 3):
+    total_tentativas:5
 
 # poderiamos usar o while invés do for desta maneira, estamos substituindo abaixo por for while(rodada <= total_tentativas):
 
