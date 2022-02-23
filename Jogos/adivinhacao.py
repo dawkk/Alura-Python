@@ -1,11 +1,12 @@
-from tracemalloc import stop
 
+from tracemalloc import stop
+import random
 
 print("***********************************")
 print("Bem vindo ao jogo de Adivinhação!")
 print("***********************************")
 
-numero_secreto = 43
+numero_secreto = random.randrange(1, 101)
 total_tentativas = 5
 rodada = 1
 
